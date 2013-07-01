@@ -16,6 +16,7 @@
 		95DB1AAC17814BF8009E67F9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAB17814BF8009E67F9 /* Default.png */; };
 		95DB1AAE17814BF8009E67F9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAD17814BF8009E67F9 /* Default@2x.png */; };
 		95DB1AB017814BF8009E67F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAF17814BF8009E67F9 /* Default-568h@2x.png */; };
+		95DB1AC017814C81009E67F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB1ABF17814C81009E67F9 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		95DB1AAB17814BF8009E67F9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		95DB1AAD17814BF8009E67F9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		95DB1AAF17814BF8009E67F9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		95DB1ABE17814C81009E67F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		95DB1ABF17814C81009E67F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +81,8 @@
 		95DB1A9F17814BF8009E67F9 /* ImageMethod */ = {
 			isa = PBXGroup;
 			children = (
-				95DB1AA817814BF8009E67F9 /* AppDelegate.h */,
-				95DB1AA917814BF8009E67F9 /* AppDelegate.m */,
+				95DB1ABD17814C76009E67F9 /* Main */,
+				95DB1ABC17814C4E009E67F9 /* AppDelegate */,
 				95DB1AA017814BF8009E67F9 /* Supporting Files */,
 			);
 			path = ImageMethod;
@@ -97,6 +100,24 @@
 				95DB1AAF17814BF8009E67F9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DB1ABC17814C4E009E67F9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				95DB1AA817814BF8009E67F9 /* AppDelegate.h */,
+				95DB1AA917814BF8009E67F9 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		95DB1ABD17814C76009E67F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				95DB1ABE17814C81009E67F9 /* MainViewController.h */,
+				95DB1ABF17814C81009E67F9 /* MainViewController.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +187,7 @@
 			files = (
 				95DB1AA617814BF8009E67F9 /* main.m in Sources */,
 				95DB1AAA17814BF8009E67F9 /* AppDelegate.m in Sources */,
+				95DB1AC017814C81009E67F9 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MainViewController.h
 //  ImageMethod
 //
 //  Created by A12912 on 13/07/01.
@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MainViewController : UIViewController
 
 
 @end
