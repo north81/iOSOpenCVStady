@@ -6,11 +6,34 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		95DB1ABA17814BF9009E67F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95DB1AB617814BF8009E67F9 /* ImageMethod.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95DB1A9617814BF8009E67F9;
+			remoteInfo = ImageMethod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95DB1AB617814BF8009E67F9 /* ImageMethod.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageMethod.xcodeproj; path = ImageMethod/ImageMethod.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		95DB1A8617814B09009E67F9 = {
 			isa = PBXGroup;
 			children = (
+				95DB1AB617814BF8009E67F9 /* ImageMethod.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		95DB1AB717814BF8009E67F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95DB1ABB17814BF9009E67F9 /* ImageMethod.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,11 +53,27 @@
 			);
 			mainGroup = 95DB1A8617814B09009E67F9;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 95DB1AB717814BF8009E67F9 /* Products */;
+					ProjectRef = 95DB1AB617814BF8009E67F9 /* ImageMethod.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		95DB1ABB17814BF9009E67F9 /* ImageMethod.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ImageMethod.app;
+			remoteRef = 95DB1ABA17814BF9009E67F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		95DB1A8B17814B09009E67F9 /* Debug */ = {
