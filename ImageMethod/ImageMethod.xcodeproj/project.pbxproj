@@ -16,7 +16,8 @@
 		95DB1AAC17814BF8009E67F9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAB17814BF8009E67F9 /* Default.png */; };
 		95DB1AAE17814BF8009E67F9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAD17814BF8009E67F9 /* Default@2x.png */; };
 		95DB1AB017814BF8009E67F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAF17814BF8009E67F9 /* Default-568h@2x.png */; };
-		95DB1AC017814C81009E67F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB1ABF17814C81009E67F9 /* MainViewController.m */; };
+		95DB1AC017814C81009E67F9 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95DB1ABF17814C81009E67F9 /* MainViewController.mm */; };
+		95DB1AC2178150FC009E67F9 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DB1AC1178150FC009E67F9 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,8 @@
 		95DB1AAD17814BF8009E67F9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		95DB1AAF17814BF8009E67F9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		95DB1ABE17814C81009E67F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		95DB1ABF17814C81009E67F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		95DB1ABF17814C81009E67F9 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		95DB1AC1178150FC009E67F9 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../asset/libs/ios/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 				95DB1A9A17814BF8009E67F9 /* UIKit.framework in Frameworks */,
 				95DB1A9C17814BF8009E67F9 /* Foundation.framework in Frameworks */,
 				95DB1A9E17814BF8009E67F9 /* CoreGraphics.framework in Frameworks */,
+				95DB1AC2178150FC009E67F9 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +74,7 @@
 		95DB1A9817814BF8009E67F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95DB1AC1178150FC009E67F9 /* opencv2.framework */,
 				95DB1A9917814BF8009E67F9 /* UIKit.framework */,
 				95DB1A9B17814BF8009E67F9 /* Foundation.framework */,
 				95DB1A9D17814BF8009E67F9 /* CoreGraphics.framework */,
@@ -81,6 +85,7 @@
 		95DB1A9F17814BF8009E67F9 /* ImageMethod */ = {
 			isa = PBXGroup;
 			children = (
+				95DB1AC317815106009E67F9 /* OpenCV+UIImage */,
 				95DB1ABD17814C76009E67F9 /* Main */,
 				95DB1ABC17814C4E009E67F9 /* AppDelegate */,
 				95DB1AA017814BF8009E67F9 /* Supporting Files */,
@@ -115,9 +120,16 @@
 			isa = PBXGroup;
 			children = (
 				95DB1ABE17814C81009E67F9 /* MainViewController.h */,
-				95DB1ABF17814C81009E67F9 /* MainViewController.m */,
+				95DB1ABF17814C81009E67F9 /* MainViewController.mm */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		95DB1AC317815106009E67F9 /* OpenCV+UIImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "OpenCV+UIImage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +199,7 @@
 			files = (
 				95DB1AA617814BF8009E67F9 /* main.m in Sources */,
 				95DB1AAA17814BF8009E67F9 /* AppDelegate.m in Sources */,
-				95DB1AC017814C81009E67F9 /* MainViewController.m in Sources */,
+				95DB1AC017814C81009E67F9 /* MainViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +276,10 @@
 		95DB1AB417814BF8009E67F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../asset/libs/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageMethod/ImageMethod-Prefix.pch";
 				INFOPLIST_FILE = "ImageMethod/ImageMethod-Info.plist";
@@ -275,6 +291,10 @@
 		95DB1AB517814BF8009E67F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../asset/libs/ios\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageMethod/ImageMethod-Prefix.pch";
 				INFOPLIST_FILE = "ImageMethod/ImageMethod-Info.plist";

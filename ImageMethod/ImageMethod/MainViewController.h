@@ -12,4 +12,7 @@
 @interface MainViewController : UIViewController
 
 
+@property(strong)UIImageView *_image_view;
+
+
 @end
