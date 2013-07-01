@@ -80,6 +80,16 @@
     return cvMat;
 }
 
+// グレースケールに変換する関数
+- (UIImage *)changeGray:(NSString *)path
+{
+    cv::Mat srcMat = [self cvMatFromUIImage:[UIImage imageNamed:path]];
+    cv::Mat greyMat;
+    cv::cvtColor(srcMat, greyMat, CV_BGR2GRAY);
+    
+    return [self UIImageFromCVMat:greyMat];
+}
+
 - (id)init
 {
     self = [super init];
@@ -91,6 +101,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIImage *image = [self changeGray:@"lenna.png"];
+    self._image_view = [[UIImageView alloc] initWithImage:image];
+    
+    [self.view addSubview:self._image_view];
 }
 
 - (void)didReceiveMemoryWarning

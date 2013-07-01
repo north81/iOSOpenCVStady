@@ -18,6 +18,7 @@
 		95DB1AB017814BF8009E67F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AAF17814BF8009E67F9 /* Default-568h@2x.png */; };
 		95DB1AC017814C81009E67F9 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95DB1ABF17814C81009E67F9 /* MainViewController.mm */; };
 		95DB1AC2178150FC009E67F9 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DB1AC1178150FC009E67F9 /* opencv2.framework */; };
+		95DB1ACA178152BC009E67F9 /* lenna.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DB1AC9178152BC009E67F9 /* lenna.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		95DB1ABE17814C81009E67F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		95DB1ABF17814C81009E67F9 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		95DB1AC1178150FC009E67F9 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../asset/libs/ios/opencv2.framework; sourceTree = "<group>"; };
+		95DB1AC9178152BC009E67F9 /* lenna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lenna.png; path = ../../asset/bmp/lenna.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		95DB1A9F17814BF8009E67F9 /* ImageMethod */ = {
 			isa = PBXGroup;
 			children = (
+				95DB1AC71781529D009E67F9 /* asset */,
 				95DB1AC317815106009E67F9 /* OpenCV+UIImage */,
 				95DB1ABD17814C76009E67F9 /* Main */,
 				95DB1ABC17814C4E009E67F9 /* AppDelegate */,
@@ -130,6 +133,22 @@
 			children = (
 			);
 			name = "OpenCV+UIImage";
+			sourceTree = "<group>";
+		};
+		95DB1AC71781529D009E67F9 /* asset */ = {
+			isa = PBXGroup;
+			children = (
+				95DB1AC8178152A3009E67F9 /* bmp */,
+			);
+			name = asset;
+			sourceTree = "<group>";
+		};
+		95DB1AC8178152A3009E67F9 /* bmp */ = {
+			isa = PBXGroup;
+			children = (
+				95DB1AC9178152BC009E67F9 /* lenna.png */,
+			);
+			name = bmp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +206,7 @@
 				95DB1AAC17814BF8009E67F9 /* Default.png in Resources */,
 				95DB1AAE17814BF8009E67F9 /* Default@2x.png in Resources */,
 				95DB1AB017814BF8009E67F9 /* Default-568h@2x.png in Resources */,
+				95DB1ACA178152BC009E67F9 /* lenna.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
